@@ -9,4 +9,5 @@ if (a+b)>c and (a+c)>b and (c+b)>a:
    elif (a==b and a!=c) or (a==c and b!=a):
         print(2)   
    else:print(1)
-else: print(0)    
+else: print(0)
+print('stop')    
