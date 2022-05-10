@@ -1,0 +1,39 @@
+#Mashhur insonlar ismi va ular haqida malumot
+# famous_persons1={'name':'Muhammad Yusuf','age':34,'books':['Jizzaxim','O`zbekiston','Qizil atirgul'],'country':'Jizzax'}
+# famous_persons2={'name':'Pushkin','age':56,'books':['Davlatim',"Hur Russia",'Stalin'],'country':'Russia'}
+# famous_persons3={'name':'MuhammadSodiq Muhammad','age':78,'books':['Baxtiyor oila','Islom manaviyati','Oila'],'country':'Farg`ona'}
+# person=[famous_persons1,famous_persons2,famous_persons3]
+# for people in person:
+#     print(f"{people['name']} ning mashxur kitoblari:\n"
+#     f"{people['books']}")
+
+
+#Dostlarimizni yaxshi korgan filmlari royxati
+# kinolar = {
+#     'ali':['Terminator','Rambo','Titanic'],
+#     'vali':['Tenet','Inception','Interstellar'],
+#     'hasan':['Abdullajon','Bomba','Shaytanat'],
+#     'husan':['Mahallada duv-duv gap','John Wick']
+#     }
+
+# for ism, kinolar in kinolar.items():
+#     print(f"\n{ism.title()}ning sevimli kinolari:")
+#     for kino in kinolar:
+#         print(kino)
+
+# Davlatlar haqida malumot
+
+Countries={
+    'Usa':{'capital':'Washington','region':'Amerika','Populations':80000000,'territory':'34 mln kv'},
+    'Russia':{'capital':'Moskva','region':'Europa','Populations':120000000,'territory':'56 mln kv'},
+    'Uzbekistan':{'capital':'Toshkent','region':'Asia','Populations':33000000,'territory':'12 mln kv'},
+}
+name=input("enter country that you want to know>>>")
+if name.title() in Countries:
+   key=Countries[name.title()]
+   print(f"{name.capitalize()} davlatining poytaxti {key['capital'].title()} \n"
+   f"\n Region:{key['region']}"
+   f"\n Population:{key['Populations']} odam"
+   f"\nHududi:{key['territory']}")
+else :
+    print('SORRY: WE don`t have information about this country')
