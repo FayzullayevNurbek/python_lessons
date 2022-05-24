@@ -37,10 +37,9 @@ while x!='no':
     sc=second_count
     second_count=1
     x=input('Do you want to continue game (yes/no)>')
-if c>sc:
     print(f'congralations!!! you win game -{c} times'
         f'computer -{sc}')
-elif sc>c:
+elif sc<c:
       print(f'Sorry!!! computer win game -{sc} times'
         f'you -{c}')
 else:print(f' you two win -{c}')
